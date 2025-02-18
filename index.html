@@ -333,7 +333,6 @@
                 </div>
                 <div class="modal-body">
                     <div id="carouselApartment2" class="carousel slide" data-bs-ride="carousel">
-                        <!-- Indicators -->
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselApartment2" data-bs-slide-to="0"
                                 class="active"></button>
@@ -517,12 +516,11 @@
     <script>
         const modal = document.getElementById('imageModal');
 
-        // Kada se modal prikazuje
         modal.addEventListener('show.bs.modal', function (event) {
-            const button = event.relatedTarget; // Element koji je pokrenuo modal (slika)
-            const imgSrc = button.getAttribute('data-bs-img-src'); // Uzmi izvor slike
+            const button = event.relatedTarget;
+            const imgSrc = button.getAttribute('data-bs-img-src');
             const modalImage = document.getElementById('modalImage');
-            modalImage.src = imgSrc; // Postavi izvor slike u modal
+            modalImage.src = imgSrc;
         });
     </script>
 
