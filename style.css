@@ -1,0 +1,52 @@
+.k img {
+    height: 500px;
+    width: 100%;
+}
+
+@media screen and (max-width:576px) {
+    .k img {
+        height: 400px;
+    }
+
+    .rub {
+        border: none !important;
+    }
+
+}
+
+.rub {
+    padding: 0 !important;
+}
+
+@media screen and (max-width:992px) {
+    .margina {
+        margin-top: 100px;
+    }
+
+}
+
+.review-card {
+    transition: all 0.3s ease-in-out;
+
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(var(--bs-primary-rgb), 0.7) !important;
+}
+
+.flexgrow {
+    flex-grow: 1;
+}
+
+.flexgrow img {
+    height: 100%;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 15px rgba(var(--bs-primary-rgb), 0.7) !important;
+}
+
+select:focus {
+    box-shadow: 0 0 15px rgba(var(--bs-primary-rgb), 0.7) !important;
+}
